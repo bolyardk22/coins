@@ -1,3 +1,8 @@
+def how_much_change
+	p "How much change do you have today?"
+	amount = gets.to_i
+end
+
 def change_hashes(money)
   change = Hash[:quarters, 0, :dimes, 0, :nickels, 0, :pennies, 0]
   coin_values = Hash[25, :quarters, 10, :dimes, 5, :nickels, 1, :pennies]
@@ -12,3 +17,5 @@ def change_hashes(money)
   
   change
 end
+
+p change_hashes(how_much_change)
